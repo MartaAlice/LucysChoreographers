@@ -13,7 +13,7 @@ To execute in the virtual machine:
 ```
 **2. Download the repository:**
 ```bash
-  git clone 
+  git clone https://github.com/MartaAlice/LucysChoreographers
 ```
 **3. Get the needed Python3 tools:**
 ```bash
