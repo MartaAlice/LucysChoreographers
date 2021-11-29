@@ -15,7 +15,7 @@ sudo apt-get update
 sudo apt-get install vlc git
 
 2. Download the repository:
-git clone https://github.com/iosonopersia/duonao
+git clone 
 
 3. Get the needed Python3 tools:
 cd duonao
