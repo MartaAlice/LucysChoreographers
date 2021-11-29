@@ -10,7 +10,7 @@ Marta Stella   marta.stella@studio.unibo.it
 
 ## Instructions
 To execute in the virtual machine:
-1. Install VLC and GIT:
+1. Install VLC and GIT:\n
 sudo apt-get update
 sudo apt-get install vlc git
 
