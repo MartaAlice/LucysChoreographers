@@ -17,7 +17,7 @@ To execute in the virtual machine:
 ```
 **3. Get the needed Python3 tools:**
 ```bash
-  cd "Lucy's choreographers"
+  cd LucysChoreographers
   pip3 install -U pip setuptools
   sudo apt-get install python3-venv
 ```
@@ -33,7 +33,7 @@ To execute in the virtual machine:
 ```
 **6. Run the script:**
 ```bash
-  cd "Lucy's choreographers"
+  cd LucyChoreographers
   . venv/bin/activate
   python3 main.py localhost <port>
   deactivate
