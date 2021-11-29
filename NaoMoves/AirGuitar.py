@@ -4,6 +4,8 @@ import time
 from naoqi import ALProxy
 
 
+
+
 def main(robotIP, port):
 	names = list()
 	times = list()
