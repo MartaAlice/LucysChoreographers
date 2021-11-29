@@ -1,26 +1,21 @@
 # Lucy's choreographers
 Alice Montori  alice.montori2@studio.unibo.it
-Marta Stella   marta.stella@studio.unibo.it
 
-## Resources
-[Music]
-[Full demo]
-[Short demo (1 minute)]
-[Presentation]
+Marta Stella   marta.stella@studio.unibo.it
 
 ## Instructions
 To execute in the virtual machine:
-1. Install VLC and GIT:
+**1. Install VLC and GIT:**
 
   sudo apt-get update
 
   sudo apt-get install vlc git
 
-2. Download the repository:
+**2. Download the repository:**
 
   git clone 
 
-3. Get the needed Python3 tools:
+**3. Get the needed Python3 tools:**
 
   cd duonao
 
@@ -28,11 +23,11 @@ To execute in the virtual machine:
 
   sudo apt-get install python3-venv
 
-4. Prepare the virtual environment:
+**4. Prepare the virtual environment:**
 
   python3 -m venv venv
 
-5. Install the Python3 dependencies:
+**5. Install the Python3 dependencies:**
 
   . venv/bin/activate
 
@@ -40,7 +35,7 @@ To execute in the virtual machine:
 
   deactivate
 
-6. Run the script:
+**6. Run the script:**
 
   cd "Lucy's choreographers"
 
