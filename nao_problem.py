@@ -43,7 +43,7 @@ class NaoProblem(Problem):
         if state_dict['remaining_time'] < move.duration:
             return False
 
-        # 2: check if the preconditions are sastified
+        # 2: check if the preconditions are satified
         if 'standing' in move.preconditions:
             if state_dict['standing'] != move.preconditions['standing']:
                 return False
