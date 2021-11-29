@@ -1,7 +1,7 @@
 # Lucy's choreographers
-Alice Montori  alice.montori2@studio.unibo.it
+**Alice Montori:**    alice.montori2@studio.unibo.it
 
-Marta Stella   marta.stella@studio.unibo.it
+**Marta Stella:**   marta.stella@studio.unibo.it
 
 ## Instructions
 To execute in the virtual machine:
