@@ -63,30 +63,30 @@ class Move:
 
 def main(robot_ip, port):
     # Mandatory moves in an order choosen by us:
-    mandatory_moves = [('StandInit', Move(1.37)),('WipeForehead', Move(4.48)),('Stand', Move(1.57)),('Hello', Move(4.34)),('Sit', Move(16.68)),('SitRelax', Move(6.62)),('StandZero', Move(1.75))]
-    final_move = ('Crouch', Move(2.18))
+    mandatory_moves = [('StandInit', Move(1.5)),('WipeForehead', Move(4.5)),('Stand', Move(1.5)),('Hello', Move(4.5)),('Sit', Move(17.0)),('SitRelax', Move(7.0)),('StandZero', Move(1.5))]
+    final_move = ('Crouch', Move(2.5))
     # Moves used between mandatory ones:
     moves = {
-             'FootSteps':               Move(7.60,  {'standing': True},  {'standing': True}),
-             'HulaHoop':                Move(4.30,  {'standing': True},  {'standing': True}),
-             'HeadMove':                Move(5.60,  {'standing': True},  {'standing': True}),
-             'Kick':                    Move(7.10,  {'standing': True},  {'standing': True}),
-             'AirGuitar':               Move(4.14,  {'standing': True},  {'standing': True}),
-             'SprinklerL':              Move(4.16,  {'standing': True},  {'standing': True}),
-             'SprinklerR':              Move(4.16,  {'standing': True},  {'standing': True}),
+             'FootSteps':               Move(8.0,  {'standing': True},  {'standing': True}),
+             'HulaHoop':                Move(4.5,  {'standing': True},  {'standing': True}),
+             'HeadMove':                Move(6.0,  {'standing': True},  {'standing': True}),
+             'Kick':                    Move(7.5,  {'standing': True},  {'standing': True}),
+             'AirGuitar':               Move(4.5,  {'standing': True},  {'standing': True}),
+             'SprinklerL':              Move(4.5,  {'standing': True},  {'standing': True}),
+             'SprinklerR':              Move(4.5,  {'standing': True},  {'standing': True}),
              'StandUp':                 Move(11.0,  {'standing': False},  {'standing': True}),
-             'StandZero':               Move(1.75,  {'standing': True},  {'standing': True}),
-             'Hello':                   Move(4.34,  None,None),
-             'WipeForehead':            Move(4.48,  None,None),
-             'Rotation_handgun_object': Move(3.15,  None,None),
-             'Double_movement':         Move(4.91,  None,None),
-  	     'Right_arm':               Move(6.17,  None,None),
-             'Arms_opening':            Move(4.10,  None,None),
-             'Union_arms':              Move(7.91,  None,None),
-             'Move_forward':            Move(3.13,   {'standing': True},  {'standing': True}),
-             'Move_backward':           Move(3.04,   {'standing': True},  {'standing': True}),
-             'Diagonal_left':           Move(2.44,   {'standing': True},  {'standing': True}),
-             'Diagonal_right':          Move(2.41,   {'standing': True},  {'standing': True}),
+             'StandZero':               Move(2.0,  {'standing': True},  {'standing': True}),
+             'Hello':                   Move(4.5,  None,None),
+             'WipeForehead':            Move(4.5,  None,None),
+             'Rotation_handgun_object': Move(3.5,  None,None),
+             'Double_movement':         Move(5.0,  None,None),
+  	     'Right_arm':               Move(6.5,  None,None),
+             'Arms_opening':            Move(4.5,  None,None),
+             'Union_arms':              Move(8.0,  None,None),
+             'Move_forward':            Move(3.5,   {'standing': True},  {'standing': True}),
+             'Move_backward':           Move(3.5,   {'standing': True},  {'standing': True}),
+             'Diagonal_left':           Move(2.5,   {'standing': True},  {'standing': True}),
+             'Diagonal_right':          Move(2.5,   {'standing': True},  {'standing': True}),
             }
     
     moves_list = [*mandatory_moves, final_move]
@@ -129,7 +129,7 @@ def main(robot_ip, port):
         solution += current_choreography
     
     #extra moves to fill the remaining time before last mandatory move
-    extra_moves = [('Hello', Move(4.34)),('Bow', Move(4.00)),('Move_forward', Move(3.13)),('HulaHoop', Move(4.30)),('SprinklerL', Move(4.16)),('Diagonal_left', Move(2.44))]
+    extra_moves = [('HulaHoop', Move(4.5)),('Hello', Move(4.5)),('SprinklerL', Move(4.5)),('Bow', Move(4.0)),('Move_forward', Move(3.5)),('Move_backward', Move(3.5)),('Rotation_handgun_object', Move(3.5)),('Diagonal_left', Move(2.5)),('Diagonal_right', Move(2.5)),('StandZero', Move(2.0))]
     i = 0
     final_moves = []
     while total_remaining_time >= 3:
